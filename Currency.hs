@@ -531,6 +531,8 @@ instance Enum ISO4217Currency where
 	toEnum _ = error "ISO4217Currency: no currency found for that number."
 
 class MinorUnits a where
+	-- | The number of fractional decimal places in an amount of a
+	-- 'Currency' or 'ISO4217Currency'
 	minorUnits :: a -> Maybe Int
 
 instance MinorUnits Currency where
