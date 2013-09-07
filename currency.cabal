@@ -2,8 +2,8 @@ name:            currency
 version:         0.2.0.0
 cabal-version:   >=1.8
 license:         OtherLicense
-license-file:     COPYING
-copyright:       © 2011-2012 Stephen Paul Weber
+license-file:    COPYING
+copyright:       © 2013 Stephen Paul Weber
 category:        Data
 author:          Stephen Paul Weber <singpolyma@singpolyma.net>
 maintainer:      Stephen Paul Weber <singpolyma@singpolyma.net>
