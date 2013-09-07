@@ -1,5 +1,5 @@
 name:            currency
-version:         0.1.0.0
+version:         0.2.0.0
 cabal-version:   >=1.8
 license:         OtherLicense
 license-file:     COPYING
@@ -26,10 +26,12 @@ description:
 
 library
         exposed-modules:
-                Currency
+                Currency,
+                Currency.Rates
 
         build-depends:
                 base == 4.*,
+                containers,
                 hashable,
                 iso3166-country-codes >= 0.20111111
 
