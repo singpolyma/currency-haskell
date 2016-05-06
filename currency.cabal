@@ -10,7 +10,7 @@ maintainer:      Stephen Paul Weber <singpolyma@singpolyma.net>
 stability:       experimental
 build-type:      Simple
 homepage:        https://github.com/singpolyma/currency-haskell
-bug-reports:     http://github.com/singpolyma/OpenPGP-Haskell/issues
+bug-reports:     http://github.com/singpolyma/currency-haskell/issues
 synopsis:        Types representing standard and non-standard currencies
 description:
         This package provides two types for representing currencies, one that
