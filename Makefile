@@ -27,7 +27,7 @@ dist/setup-config: currency.cabal
 	cabal configure
 
 clean:
-	find -name '*.o' -o -name '*.hi' | xargs $(RM)
+	find . '(' -name '*.o' -o -name '*.hi' ')' -print0 | xargs -0 $(RM)
 	$(RM) report.html
 	$(RM) -r dist dist-ghc
 

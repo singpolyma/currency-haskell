@@ -11,9 +11,9 @@ nums = nums.to_a.sort {|(code1,num1),(code2,num2)| num1 <=> num2 }
 
 nums.each do |(code, num)|
 	if code[0] == 'X'
-		puts "\tfromEnum (NonNationalCurrency '#{code[1]}' '#{code[2]}')     = #{num}"
+		puts "        fromEnum (NonNationalCurrency '#{code[1]}' '#{code[2]}')     = #{num}"
 	else
-		puts "\tfromEnum (NationalCurrency Country.#{code[0..1]} '#{code[2]}') = #{num}"
+		puts "        fromEnum (NationalCurrency Country.#{code[0..1]} '#{code[2]}') = #{num}"
 	end
 end
 
@@ -21,8 +21,8 @@ puts
 
 nums.each do |(code, num)|
 	if code[0] == 'X'
-		puts "\ttoEnum #{num} = NonNationalCurrency '#{code[1]}' '#{code[2]}'"
+		puts "        toEnum #{num} = NonNationalCurrency '#{code[1]}' '#{code[2]}'"
 	else
-		puts "\ttoEnum #{num} = NationalCurrency Country.#{code[0..1]} '#{code[2]}'"
+		puts "        toEnum #{num} = NationalCurrency Country.#{code[0..1]} '#{code[2]}'"
 	end
 end
